@@ -1,0 +1,208 @@
+{
+	// Place your snippets for latex here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	"Algorithm": {
+		"prefix": "algo",
+		"body": [
+		"% \\usepackage{algorithm,algorithmicx,algpseudocode}",
+		"\\begin{algorithm}",
+		"\t\\floatname{algorithm}{${1:Algorithm}}",
+		"\t\\algrenewcommand\\algorithmicrequire{\\textbf{${2:Input: }}}",
+		"\t\\algrenewcommand\\algorithmicensure{\\textbf{${3:Output: }}}",
+		"\t\\caption{$4}",
+		"\t\\label{alg:$5}",
+		"\t\\begin{algorithmic}[1]",
+		"\t\t\\Require \\$input\\$",
+		"\t\t\\Ensure \\$output\\$",
+		"\t\t$6",
+		"\t\t\\State \\textbf{return} \\$state\\$",
+		"\t\\end{algorithmic}",
+		"\\end{algorithm}",
+		"$0"
+		],
+		"desciption": "Add an algorithm"
+	},
+	"Algorithm:State": {
+		"prefix": "state",
+		"body": [
+		"\\State $1"
+		],
+		"desciption": "Add an statement of algorithm"
+	},
+	"Algorithm:If": {
+		"prefix": "if",
+		"body": [
+		"\\If{$1}",
+		"\\ElsIf{$2}",
+		"\\Else",
+		"\\EndIf"
+		],
+		"desciption": "Add an if statement of algorithm"
+	},
+	"Algorithm:For": {
+		"prefix": "for",
+		"body": [
+		"\\For{i=0:$1}",
+		"\t\\State $0",
+		"\\EndFor"
+		],
+		"desciption": "Add an for statement of algorithm"
+	},
+	"Algorithm:While": {
+		"prefix": "while",
+		"body": [
+		"\\While{$1}",
+		"\t\\State $0",
+		"\\EndWhile"
+		],
+		"desciption": "Add an for statement of algorithm"
+	},
+	"Algorithm:Ref": {
+		"prefix": "algo:ref",
+		"body": [
+		"Algorithm~\\ref{algo:$1}$0"
+		],
+		"desciption": "Ref for Algorithm"
+	},
+	"Figure:Ref": {
+		"prefix": "fig:ref",
+		"body": [
+		"Figure~\\ref{fig:$1}$0"
+		],
+		"desciption": "Ref for Figure"
+	},
+	"Figure": {
+		"prefix": "befigure",
+		"body": [
+		"\\begin{figure}[!htbp]",
+		"\t\\begin{center}",
+		"\t\t\\includegraphics[width=0.95\\textwidth]{img/$1}",
+		"\t\\end{center}",
+		"\t\\caption{$2}",
+		"\t\\label{fig:$3}",
+		"\\end{figure}",
+		"$0"
+		],
+		"description": "Add a figure"
+	},
+	"Subfigure":{
+		"prefix": "besubfigure",
+		"description": "Add a group of subfigure\n \\usepackage{caption}\n\\usepackage{subcaption}" ,
+		"body": [
+			"\\usepackage{caption}",
+			"\\usepackage{subcaption}",
+			"\\begin{figure}[!htbp]",
+			"\t\\begin{center}",
+			  "\t\\begin{subfigure}[t]{0.5\\textwidth}",
+			  "\t\t\\centering",
+			  "%\t\t include first image",
+			  "\t\t\\includegraphics[width=\\linewidth]{img/$1}",
+			  "\t\t\\caption{$2}",
+			  "\t\t\\label{fig:$3}",
+			"\t\\end{subfigure}",
+			"\t\\end{center}",
+			"~",
+			"\t\\begin{subfigure}[t]{0.5\\textwidth}",
+			"\t\t\\centering",
+			"%\t\t include second image",
+			"\t\t\\includegraphics[width=\\linewidth]{img/$4}",
+			"\t\t\\caption{$5}",
+			"\t\t\\label{fig:$6}",
+			"\t\\end{subfigure}",
+			"\t\\end{center}",
+			"\\",
+			"\t\\begin{subfigure}[t]{0.9\\textwidth}",
+			"\t\t\\centering",
+			"%\t\t include third image",
+			"\t\t\\includegraphics[width=\\linewidth]{img/$7}",
+			"\t\t\\caption{$8}",
+			"\t\t\\label{fig:$9}",
+			"\t\\end{subfigure}",
+			"\t\\end{center}",
+			"\t\\caption{$10}",
+			"\t\\label{fig:$11}",
+		  "\\end{figure}",
+		  "$0"
+		]
+	},
+	"Table": {
+		"prefix": "betable",
+		"body": [
+		"\\begin{table}[!htbp]",
+		"\t\\begin{small}",
+		"\t\t\\caption{$1}",
+		"\t\t\\label{tab:$2}",
+		"\t\t\\begin{center}",
+		"\t\t\t\\begin{tabular}[c]{l|l}",
+		"\t\t\t\t\\hline",
+		"\t\t\t\t\\multicolumn{1}{c|}{\\textbf{$3}} & ",
+		"\t\t\t\t\\multicolumn{1}{c}{\\textbf{$4}} \\\\\\\\",
+		"\t\t\t\t\\hline",
+		"\t\t\t\ta & b \\\\\\\\",
+		"\t\t\t\tc & d \\\\\\\\",
+		"\t\t\t\t$5",
+		"\t\t\t\t\\hline",
+		"\t\t\t\\end{tabular}",
+		"\t\t\\end{center}",
+		"\t\\end{small}",
+		"\\end{table}",
+		"$0"
+		],
+		"description": "Add a table"
+	},
+	"Table:ACM": {
+		"prefix": "betable:acm",
+		"body": [
+		"\\begin{table}[!htbp]",
+		"\t\\caption{$1}",
+		"\t\\label{tab:$2}",
+		"\t\\begin{tabular}{${3:ccl}}",
+		"\t\t\\toprule",
+		"\t\t$4",
+		"\t\ta & b & c \\\\\\\\",
+		"\t\t\\midrule",
+		"\t\td & e & f \\\\\\\\",
+		"\t\t\\bottomrule",
+		"\t\\end{tabular}",
+		"\\end{table}",
+		"$0"
+		],
+		"description": "Add a table (ACM)"
+	},
+	"Table:Ref": {
+		"prefix": "table:ref",
+		"body": [
+		"Table~\\ref{tab:$1}$0"
+		],
+		"desciption": "Ref for Table"
+	},
+	"Cite": {
+		"prefix": "cite",
+		"body": [
+		"~\\cite{$1}$0"
+		],
+		"description": "Add a cite"
+	},
+	"Operatorname":{
+		"prefix": "operatorname",
+		"body": "\\operatorname{$1}$0",
+		"description": "operatorname"
+	},
+	"sumlimits":{
+		"prefix": "sumlimits",
+		"body": "\\sum\\limits_{$1}^{$2}$0",
+		"description": "sumlimits"
+	}
+
+}
