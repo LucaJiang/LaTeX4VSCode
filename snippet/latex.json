@@ -100,36 +100,29 @@
 		"prefix": "besubfigure",
 		"description": "Add a group of subfigure\n \\usepackage{caption}\n\\usepackage{subcaption}" ,
 		"body": [
-			"\\usepackage{caption}",
-			"\\usepackage{subcaption}",
 			"\\begin{figure}[!htbp]",
-			"\t\\begin{center}",
-			  "\t\\begin{subfigure}[t]{0.5\\textwidth}",
+			  "\t\\begin{subfigure}[t]{0.49\\textwidth}",
 			  "\t\t\\centering",
 			  "%\t\t include first image",
 			  "\t\t\\includegraphics[width=\\linewidth]{img/$1}",
 			  "\t\t\\caption{$2}",
 			  "\t\t\\label{fig:$3}",
 			"\t\\end{subfigure}",
-			"\t\\end{center}",
-			"~",
-			"\t\\begin{subfigure}[t]{0.5\\textwidth}",
+			"\t\\begin{subfigure}[t]{0.49\\textwidth}",
 			"\t\t\\centering",
 			"%\t\t include second image",
 			"\t\t\\includegraphics[width=\\linewidth]{img/$4}",
 			"\t\t\\caption{$5}",
 			"\t\t\\label{fig:$6}",
 			"\t\\end{subfigure}",
-			"\t\\end{center}",
-			"\\",
-			"\t\\begin{subfigure}[t]{0.9\\textwidth}",
+			"~",
+			"\t\\begin{subfigure}[t]{0.99\\textwidth}",
 			"\t\t\\centering",
 			"%\t\t include third image",
 			"\t\t\\includegraphics[width=\\linewidth]{img/$7}",
 			"\t\t\\caption{$8}",
 			"\t\t\\label{fig:$9}",
 			"\t\\end{subfigure}",
-			"\t\\end{center}",
 			"\t\\caption{$10}",
 			"\t\\label{fig:$11}",
 		  "\\end{figure}",
@@ -187,6 +180,13 @@
 		],
 		"desciption": "Ref for Table"
 	},
+	"Section:Ref": {
+		"prefix": "section:ref",
+		"body": [
+		"Section~\\ref{sec:$1}$0"
+		],
+		"desciption": "Ref for Section"
+	},
 	"Cite": {
 		"prefix": "cite",
 		"body": [
@@ -203,6 +203,11 @@
 		"prefix": "sumlimits",
 		"body": "\\sum\\limits_{$1}^{$2}$0",
 		"description": "sumlimits"
+	},
+	"boldsymbol":{
+		"prefix": "\\boldsymbol",
+		"body": "\\boldsymbol{$1}$0",
+		"description": "boldsymbol"
 	}
 
 }
