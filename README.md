@@ -1,37 +1,69 @@
-## Welcome to GitHub Pages
+# LaTeX4VSCode(持续更新中)
+这里用于存放我在VSCode中使用LaTeX用到的资源。方便自己，也方便大家，欢迎随意取用。如果有想要我新增的资源，可以PR或在讨论区提出。考虑到阅读本仓库的主要是我的同学、朋友，本仓库坚持使用优美的中国话。
 
-You can use the [editor on GitHub](https://github.com/LucaJiang/Latex4VSCode/edit/gh-pages/README.md) to maintain and preview the content for your website in Markdown files.
+## Contents
+* [前言](#前言)
+* [入门](#入门教程)
+* [进阶](#进阶之路)
+* [成仙] 其实我自己都没走到这一步，画图和自己写模板之类的我只会yi点点
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## 前言
+关于为什么要在VSCode下使用LaTeX：
+1. 支持扩展多。VSC生态很好，用的人多，开发扩展的人也就多了，而且“巨硬”很鼓励开发者分享自己的扩展。有了扩展，就可以把配色调成自己喜欢的样式（将编译器改成适合摸鱼的样式，懂得都懂。
+2. 自由度高。如果会玩，自由度高，不会玩就是，“这鬼玩意真难用”。
+3. 支持语言多。除了R和MATLAB不太支持，其他我要用的语言都支持得很好，比如Python、Cpp、Markdown。如果所有语言都能用VSC，那就不用记住那么多快捷键了（虽然R Studio和MATLAB的快捷键我都按VSC的改了。
+4. 快捷键+自动补全。拯救打字龟速的我。
 
-### Markdown
+第四点是最重要的😭那就演示一下所谓的补全是啥吧~
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+当我要插图片时：
+![figure](img/figure.gif "演示自动补全")
 
-```markdown
-Syntax highlighted code block
+过分一点，当我要插子图时：
+![subfigure](img/subfigure.gif "演示自动补全")
 
-# Header 1
-## Header 2
-### Header 3
 
-- Bulleted
-- List
+利益声明：我只有R和MATLAB不在VSC上写，其他语言比如Python、Cpp、Markdown都用VSC写。快捷键用得多自然就熟练。
+## 入门教程
+知乎和CSDN中有很多入门级教程，我这里就不重复造轮子啦。一般使用texlive和SumatraPDF的都可以，比如[这个](https://zhuanlan.zhihu.com/p/166523064)。要注意看原作者是用Mac还是Windows，快捷键可能不一样。
 
-1. Numbered
-2. List
+### 建议安装的VSCode扩展
+* 必选：
+  * LaTeX WorkShop：我不知道没有这个怎么在VSC运行LaTeX :-)
+* 建议：
+  * Better Comments：用于高亮“警告”，“todo”等，对于写作很有帮助（这主要是因为我不喜欢按顺序从头写到尾
+  * vscode-icons：让文件夹图案好看一点
+  * One Dark Pro：我最喜欢的配色
+  * Code Spell Checker：无论使用哪种语言我都会用这个来检查我的拼写错误
+  * LTex：可以检查文章的语法错误，对我这种英文语法菜鸡帮助挺大的。但是对中文不友好，所以等要写中文的时候就禁用
+  * git功能：其实我觉得知道git的玩家不用我提醒VSCode兼容下的git贼好使
 
-**Bold** and _Italic_ and `Code` text
+### 建议下载的软件
+* Mathpix 用于将图片格式（截图）的公式转换为tex文本
 
-[Link](url) and ![Image](src)
-```
+  网址：https://mathpix.com/
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+  用过的都说好。这玩意甚至有手机版，可以用手机拍教材，自动同步到电脑上。有时候我会用这个来做文本的OCR，免去打字之苦。
 
-### Jekyll Themes
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/LucaJiang/Latex4VSCode/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
 
-### Support or Contact
+## 进阶之路
+工欲善其事，必先利其器。所谓磨刀不误砍柴工，要想提升写作效率，对编译器和语言的了解都要到位。这里从VSC和TeX两方面简单讲讲。。。。。。。。。。。。。。。。。。。。。。。。。。。。
+### 关于VSCode
+todo:快捷键 自动补全及代码片段
+### 关于LaTeX
+todo:模板
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+
+
+
+### 许可证
+MIT License
+
+### TDL
+* 模板
+* 代码片段 见snip文件夹
+* vscode 常用功能 （快捷键及设置）
+* 绘图
+  
+最近忙着申请和毕业论文, 也不知道能有多少时间精力投到这里, 叹气.
