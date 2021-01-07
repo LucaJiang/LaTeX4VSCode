@@ -205,9 +205,14 @@
 		"description": "sumlimits"
 	},
 	"boldsymbol":{
-		"prefix": "\\boldsymbol",
+		"prefix": "boldsymbol",
 		"body": "\\boldsymbol{$1}$0",
 		"description": "boldsymbol"
+	},
+	"texprogram":{
+		"prefix": "texprogram",
+		"body": "% !TEX program = xelatex",
+		"description": "set compile method"
 	}
 
 }
