@@ -1,4 +1,6 @@
 # LaTeX4VSCode(持续更新中)
+[awesome-badge](https://github.com/sindresorhus/awesome)
+
 这里用于存放我在VSCode中使用LaTeX用到的资源。方便自己，也方便大家，欢迎随意取用。如果有想要我新增的资源，可以PR或在讨论区提出。考虑到阅读本仓库的主要是我的同学、朋友，本仓库坚持使用优美的中国话。
 
 ## Contents
