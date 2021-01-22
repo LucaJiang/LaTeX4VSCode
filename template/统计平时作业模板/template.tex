@@ -1,0 +1,54 @@
+% !TEX program = xelatex
+\documentclass[11pt]{article}
+\usepackage{fullpage}  
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{bm}
+\usepackage{fancyvrb}
+% \usepackage[utf8]{ctex}
+\usepackage{xeCJK}
+\usepackage{listings} 
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{enumerate}
+\usepackage{enumitem}
+\usepackage{booktabs}
+\usepackage{bookmark}
+\usepackage{multirow}
+\usepackage{bbm}
+% \usepackage[colorlinks=true,linkcolor=cyan]{hyperref}
+\usepackage{geometry}
+\geometry{a4paper,left=1.5cm,right=1.5cm,top=2cm,bottom=2cm}
+\setlist[enumerate,1]{label=\alph*.,itemsep=-5pt}
+\renewcommand{\baselinestretch}{1.2} % 行间距
+\usepackage{fontspec}
+\setcounter{tocdepth}{1} % 目录显示深度
+\usepackage{caption}
+\usepackage{subcaption}
+\lstset{ 
+    keywordstyle= \color{ blue!80!black!80!},
+    commentstyle= \color{red!80!green!80!}, 
+	backgroundcolor=\color{black!5!},
+	basicstyle=\tiny \monaco
+	%escapeingside={\%*}{*)}
+    frame=shadowbox, % 阴影效果
+    rulesepcolor= \color{ red!20!green!20!blue!20} ,
+    %xleftmargin=2em,xrightmargin=2em, aboveskip=1em,
+    %framexleftmargin=2em
+	numberstyle=\tiny,
+	basicstyle=\ttfamily,
+}
+% \begin{lstlisting}[language=R] 
+% \end{lstlisting}
+
+\title{\vspace{-2em}\textbf{标题}}
+\author{}
+\date{\today}
+\begin{document}
+\maketitle
+\tableofcontents
+\section{第一节}
+11111
+
+\end{document}

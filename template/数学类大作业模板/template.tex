@@ -1,0 +1,50 @@
+%!TEX program = xelatex
+% 完整编译: xelatex -> bibtex -> xelatex -> xelatex
+\documentclass[lang=cn,11pt,a4paper,cite=super,AutoFakeBold]{elegantpaper}
+
+\title{}
+\author{}
+\institute{}
+\date{\zhtoday}
+
+% 本文档命令
+\usepackage{array}
+\usepackage{caption}
+\usepackage{subcaption}
+\newcommand{\ccr}[1]{\makecell{{\color{#1}\rule{1cm}{1cm}}}}
+
+\begin{document}
+\maketitle
+\thispagestyle{empty}
+\begin{abstract}
+   
+   \keywords{}
+
+\end{abstract}
+%\newpage
+%\setcounter{page}{1}
+\setcounter{tocdepth}{1}
+\tableofcontents
+\thispagestyle{empty}
+\newpage
+
+\setcounter{page}{1}
+\setcounter{section}{-1}
+\section{引言}
+
+\section{讨论}
+
+
+
+\newpage
+\nocite{*}
+\bibliography{wpref}
+
+\newpage
+\appendix
+\appendixpage
+\addappheadtotoc
+
+
+
+\end{document}

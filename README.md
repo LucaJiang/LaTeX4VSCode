@@ -2,12 +2,18 @@
 [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 
 这里用于存放我在VSCode中使用LaTeX用到的资源。方便自己，也方便大家，欢迎随意取用。如果有想要我新增的资源，可以PR或在讨论区提出。考虑到阅读本仓库的主要是我的同学、朋友，本仓库坚持使用优美的中国话。
+- [LaTeX4VSCode(持续更新中)](#latex4vscode持续更新中)
+  - [前言](#前言)
+  - [入门教程](#入门教程)
+    - [建议安装的VSCode扩展](#建议安装的vscode扩展)
+    - [墙裂建议下载的软件](#墙裂建议下载的软件)
+  - [进阶之路](#进阶之路)
+    - [关于VSCode](#关于vscode)
+    - [关于LaTeX](#关于latex)
+  - [其它功能](#其它功能)
+  - [许可证](#许可证)
+    - [TDL](#tdl)
 
-## Contents
-* [前言](#前言)
-* [入门](#入门教程)
-* [进阶](#进阶之路)
-* [成仙] 其实我自己都没走到这一步，画图和自己写模板之类的我只会yi点点
 
 ## 前言
 关于为什么要在VSCode下使用LaTeX：
