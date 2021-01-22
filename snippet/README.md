@@ -35,3 +35,7 @@
 ```
 prefix 是在 Intellisense 中选择代码片段时要使用的前缀 body 片段内容。请使用 '$1', '${1:defaultText}' 来定义光标位置，使用“$0”表示最终光标位置。请插入带有“${varName}”和“${varName:defaultText}”的变量值，例如 "这是文件: $TM_FILENAME"。
 description 代码片段描述。
+
+
+## REFERENCE
+https://github.com/sabertazimi/LaTeX-snippets
