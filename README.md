@@ -45,8 +45,8 @@
 * 建议：
   * Better Comments：用于高亮“警告”，“todo”等，对于写作很有帮助（这主要是因为我不喜欢按顺序从头写到尾
   * vscode-icons：让文件夹图案好看一点
-  * One Dark Pro：我最喜欢的配色
-  * Code Spell Checker：无论使用哪种语言我都会用这个来检查我的拼写错误
+  * One Dark Pro：我最喜欢的主题（或者去[VSC官网](https://code.visualstudio.com/docs/getstarted/themes#:~:text=In%20VS%20Code%2C%20open%20the,%3E%20Color%20Theme%20on%20macOS)选一个自己喜欢的主题）
+  * Code Spell Checker：无论使用哪种计算机语言我都会用这个来检查我的拼写错误
   * LTex：可以检查文章的语法错误，对我这种英文语法菜鸡帮助挺大的。但是对中文不友好，所以等要写中文的时候就禁用
   * git功能：其实我觉得知道git的玩家不用我提醒VSCode兼容下的git贼好使
 
@@ -67,7 +67,10 @@
 ## 进阶之路
 工欲善其事，必先利其器。所谓磨刀不误砍柴工，要想提升写作效率，对编译器和语言的了解都要到位。这里从VSC和TeX两方面简单讲讲。。。。。。。。。。。。。。。。。。。。。。。。。。。。
 ### 关于VSCode
-todo:快捷键 自动补全及代码片段
+VSC快捷键在[这](.\keyboard-shortcuts)目前Windows和MAC快捷键cheat sheet都已上传，稍后我会出一片博客专门讲解常用快捷键操作。
+
+自动补全的json文件及使用说明已更新在[这](.\snippet)
+
 ### 关于LaTeX
 我这里会放出几个通用模板在template文件夹里，大家各取所需叭~
 
@@ -83,7 +86,6 @@ MIT License
 
 ### TDL
 * 模板
-* 代码片段 见snip文件夹
 * vscode 常用功能 （快捷键及设置）
 * 绘图
   
