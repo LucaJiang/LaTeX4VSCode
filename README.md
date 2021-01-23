@@ -67,9 +67,9 @@
 ## 进阶之路
 工欲善其事，必先利其器。所谓磨刀不误砍柴工，要想提升写作效率，对编译器和语言的了解都要到位。这里从VSC和TeX两方面简单讲讲。。。。。。。。。。。。。。。。。。。。。。。。。。。。
 ### 关于VSCode
-VSC快捷键在[这](.\keyboard-shortcuts)目前Windows和MAC快捷键cheat sheet都已上传，稍后我会出一片博客专门讲解常用快捷键操作。
+VSC快捷键在[这](./keyboard-shortcuts/README.md)。目前Windows和MAC快捷键小抄（作弊纸）都已上传，稍后我会出一片博客专门讲解常用快捷键操作。
 
-自动补全的json文件及使用说明已更新在[这](.\snippet)
+自动补全的json文件及使用说明已更新在[这](./snippet/README.md)。
 
 ### 关于LaTeX
 我这里会放出几个通用模板在template文件夹里，大家各取所需叭~
