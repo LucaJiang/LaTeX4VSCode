@@ -1,0 +1,47 @@
+\documentclass[11pt,AutoFakeBold]{article}
+\usepackage{xeCJK}  % 调用 xeCJK 宏包
+\usepackage{fullpage}  
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{fancyvrb}
+\usepackage{CJK} 
+\usepackage{listings} 
+\usepackage{xcolor}
+\usepackage{amsmath}
+\usepackage{titlesec}
+\usepackage{enumerate}
+\usepackage{enumitem}
+\usepackage{booktabs}
+\usepackage[colorlinks=true,linkcolor=cyan]{hyperref}
+\usepackage{geometry}
+\geometry{a4paper,left=2cm,right=2cm,top=2cm,bottom=2cm}
+\setlist[enumerate,1]{label=(\arabic*),itemsep=15pt}
+\usepackage{fontspec}
+\setmainfont{Times New Roman}
+\lstset{keywordstyle=\color{blue}, %%设置关键字颜色  
+        commentstyle=\color[cmyk]{1,0,1,0}, %% 设置注释颜色  
+        frame=single, %% 设置边框格式  
+        escapeinside=``, %% 逃逸字符(1左面的键)，用于显示中文  
+        extendedchars=false, %% 解决代码跨页时，章节标题，页眉等汉字不显示的问题  
+        xleftmargin=2em,xrightmargin=2em, aboveskip=1em,, %% 设置边距   
+        showspaces=false %% 不显示空格  
+        tabsize=4, %% 设置tab空格数 
+       }       
+\setCJKmainfont{NSimSun}% 设置 CJK 主字体为 SimSun （宋体）
+
+\title{标题}
+\author{\normalsize 你的名字}
+\date{\today}
+
+\begin{document}
+\maketitle
+\renewcommand{\contentsname}{目录}
+\tableofcontents
+\section{第一章}
+\label{sec:first}
+
+\subsection{第一节}
+内容
+
+
+\end{document}

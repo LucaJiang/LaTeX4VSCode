@@ -1,0 +1,34 @@
+---
+title: "作业"
+author:
+  "蒋文馨"
+date: \today
+documentclass: ctexart
+geometry: "left=3cm,right=3cm,top=2cm,bottom=2cm"
+output:
+  rticles::ctex:
+    fig_caption: yes
+    number_sections: yes
+    toc: yes
+   # keep_tex: yes
+# bibliography: biblio.bib
+classoption: "hyperref,"
+header-includes: 
+    - \usepackage{subfig}
+    - \setlength{\parskip}{10pt}
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(fig.path = 'img/', fig.pos = 'htbp!', echo = TRUE)
+```
+
+# Title
+
+
+\noindent{} **.**
+
+\noindent{} **Solution:**
+```{r fig.asp=1, fig.cap="图片标题", fig.ncol=2, fig.subcap=c("小标题1", "小标题2","小标题3","小标题4"), message=FALSE, warning=FALSE, out.width='.51\\linewidth'}
+
+```
+
