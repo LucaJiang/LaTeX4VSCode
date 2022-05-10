@@ -39,6 +39,8 @@
 ## 入门教程
 知乎和CSDN中有很多入门级教程，我这里就不重复造轮子啦。一般使用texlive和SumatraPDF的都可以，比如[这个](https://zhuanlan.zhihu.com/p/166523064)。要注意看原作者是用Mac还是Windows，快捷键可能不一样。
 
+更新：因为某些原因，我造了新的轮子 VSC下的LaTeX使用方法.pdf
+
 ### 建议安装的VSCode扩展
 * 必选：
   * LaTeX WorkShop：我不知道没有这个怎么在VSC运行LaTeX :-)
