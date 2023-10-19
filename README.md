@@ -1,6 +1,10 @@
 # LaTeX4VSCode(持续更新中)
 [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 
+2023年10月19日的更新：
+抱歉很久没有更新了，看到最近还有人star这个项目，不胜荣幸。
+本次更新了Copilot和[simplesinp](https://www.simpletex.cn/)的使用建议和说明。谢谢大家的支持和鼓励！
+
 这里用于存放我在VSCode中使用LaTeX用到的资源。方便自己，也方便大家，欢迎随意取用。如果有想要我新增的资源，可以PR或在讨论区提出。考虑到阅读本仓库的主要是我的同学、朋友，本仓库坚持使用优美的中国话。
 - [LaTeX4VSCode(持续更新中)](#latex4vscode持续更新中)
   - [前言](#前言)
@@ -21,8 +25,9 @@
 2. 自由度高。如果会玩，自由度高，不会玩就是，“这鬼玩意真难用”。
 3. 支持语言多。除了R和MATLAB不太支持，其他我要用的语言都支持得很好，比如Python、Cpp、Markdown。如果所有语言都能用VSC，那就不用记住那么多快捷键了（虽然R Studio和MATLAB的快捷键我都按VSC的改了。
 4. 快捷键+自动补全。拯救打字龟速的我。
+5. 最重要的是**Copilot**！！！
 
-第四点是最重要的😭那就演示一下所谓的补全是啥吧~
+第四点（曾经）是最重要的😭那就演示一下所谓的补全是啥吧~
 
 当我要插图片时：
 ![figure](img/figure.gif "演示自动补全")
@@ -35,7 +40,12 @@
 
 所以，虽然我打字慢，但我写作业还是挺快的。
 
-利益声明：我只有R和MATLAB不在VSC上写，其他语言比如Python、Cpp、Markdown都用VSC写。自动补全和快捷键用得多自然就熟练。
+如果GitHub可以认证教育邮箱，**强烈建议**薅微软的羊毛，使用Copilot。[使用说明](https://code.visualstudio.com/docs/editor/github-copilot)
+
+它可以预测并帮助你完成几乎所有的代码和文档。我写doc的时候，它竟然可以帮我算矩阵（向量）求导，我一整个震惊了。
+
+利益声明：我只有MATLAB不在VSC上写，其他语言比如R和Python、Cpp、Markdown都用VSC写。自动补全和快捷键用得多自然就熟练。
+
 ## 入门教程
 知乎和CSDN中有很多入门级教程，我这里就不重复造轮子啦。一般使用texlive和SumatraPDF的都可以，比如[这个](https://zhuanlan.zhihu.com/p/166523064)。要注意看原作者是用Mac还是Windows，快捷键可能不一样。
 
@@ -44,6 +54,7 @@
 ### 建议安装的VSCode扩展
 * 必选：
   * LaTeX WorkShop：我不知道没有这个怎么在VSC运行LaTeX :-)
+  * Copilot 理由见前面
 * 建议：
   * Better Comments：用于高亮“警告”，“todo”等，对于写作很有帮助（这主要是因为我不喜欢按顺序从头写到尾
   * vscode-icons：让文件夹图案好看一点
@@ -66,6 +77,8 @@
   用过的都说好。这玩意甚至有手机版，可以用手机拍教材，自动同步到电脑上。有时候我会用这个来做文本的OCR，免去打字之苦。
 
   这个软件功能很多，感兴趣的话可以去[官方doc](https://mathpix.com/docs)看看。看官方doc是一个非常好的习惯！
+  
+* [simpletex](https://www.simpletex.cn/) 免费的，请大家支持国产。虽然目前识别复杂矩阵还差了一点，日常使用是没问题的。
 
 
 ## 进阶之路
